@@ -1,26 +1,112 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        background: black;
-    }
-    .test{
-        color: aqua;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 150px;
-        transform: translateX(-50%) translateY(-50%);
-    }
-</style>
-<body>
-    <h1 class="test">THIS PAGE IS UNDER CONSTRUCTION <br> please have patience we are working on it </h1>
-</body>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000">
+      <link rel="shortcut icon" href="images/trans.png">
+      <link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+      <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" href="init/css/index.css">
+      <link rel="stylesheet" href="comm/comm.css">
+    <title>verBox</title>
+      <script src="comm/loader.js" type="text/javascript"></script>
+  </head>
+      <body>
+      <div class="container-fluid">
+          <div class="loader">
+              <div class="loadinganimation">
+              </div>
+          </div>
+          <div class="main">
+              <div class="header-all">
+              <div class="logo-div">
+                    <h2 title="verBox" class="flow-box-i"><img alt="verBox" src="images/trans.png" class="logo" />verBox</h2>
+              </div>
+              <div class="menu-div">
+                  <div class="round-div" close="false">
+                      <i class="fa fa-bars ignor"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="menu-all">
+                            <div class="login-signup-options">
+                  <a href="javascript:verBox.signUpLoginLocator(true, 'login')">
+                        <div title="login" class="login">
+                            <h2 class="user">Login <i class="fa fa-user user"></i></h2>
+                        </div>
+                  </a>
+                  <a href="javascript:verBox.signUpLoginLocator(true, 'signup')">
+                        <div title="sign up" class="signup">
+                            <h2 class="user">Sign Up <i class="fa fa-user user"></i></h2>
+                        </div>
+                  </a>
+              </div>
+                            <div class="menu-all-over">
+                  <h1 class="buttons-in-menu-all" lin="">Home</h1>
+                  <h1 class="buttons-in-menu-all" lin="">About</h1>
+                  <h1 class="buttons-in-menu-all" lin="">Get In Touch</h1>
+                  <h1 class="buttons-in-menu-all" lin="">Open Projects</h1>
+                  <h1 class="buttons-in-menu-all" lin="">Report</h1>
+                  <div class="mobile-buttons-link">
+                      <ul style="list-style-type: none;">
+                          <li class="mobile-list" lin=""><h1>Home</h1></li>
+                          <li class="mobile-list" lin=""><h1>About</h1></li>
+                          <li class="mobile-list" lin=""><h1>Get In Touch</h1></li>
+                          <li class="mobile-list" lin=""><h1>Open Project</h1></li>
+                          <li class="mobile-list" lin=""><h1>Report</h1></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+              <div class="scroll-to-top">
+                  <i class="fa fa-chevron-up ho"></i>
+              </div>
+              <div class="request-permission-notification">
+                <div class="send-notification-main-asker">
+                  <div title="close notification" class="notification-closer">
+                    <i class="fa fa-times fa-2x noticlsr"></i>
+                  </div>
+                </div>
+              </div>
+              <!--contents-->
+
+              <div style="height:100vh;width:100vw;background-image: url(comm/get%20on%20work%20from.png);"></div>
+              <div style="height:100vh;width:100vw;background-image: url(comm/get%20on%20work%20from.png);">
+              </div>
+              <div style="height:100vh;width:100vw;background-image: url(comm/get%20on%20work%20from.png);">
+                  <textarea id="test" style="z-index: 9999999999;color: black;"></textarea>
+              </div>
+              <div style="height:100vh;width:100vw;background-image: url(comm/get%20on%20work%20from.png);"></div>
+
+              <!--contents-end-->
+              <footer>
+                <div class="main-footer-all">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th class="th-th"><h6 class="tr-th-in-tbody-footer-hsixs">Cookies info</h6></th>
+                        <th class="th-th"><h6 class="tr-th-in-tbody-footer-hsixs">Report error</h6></th>
+                        <th class="th-th"><h6 class="tr-th-in-tbody-footer-hsixs">Contact us</h6></th>
+                        <th class="th-th" id="mobile-hide-tr-th"><h6 class="tr-th-in-tbody-footer-hsixs">Help</h6></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h5><img src="images/trans.png" alt="||verBox||" />verBox</h5>
+                  <p class="footer-id-host">www.verbox.unaux.com</p>
+                </div>
+              </footer>
+          </div>
+      </div>
+      <div id="dev">
+      </div>
+      <script type="text/javascript">
+      var devOps={switcherCr:function(){var b=document.createElement("button");var a=document.getElementById("dev");b.setAttribute("style","display:none");b.setAttribute("accesskey","d");b.setAttribute("onclick","devOps.verifySwitcher()");a.appendChild(b)},verifySwitcher:function(){var c=document.createElement("div");var b=document.createElement("h5");var a=document.createTextNode("Enter password for developers side");b.appendChild(a);c.appendChild(b);c.setAttribute("style","height: 200px; width: 300px; background-color: rgba(154, 109, 237, 0.76); margin: auto; margin-top: 150px;  box-shadow: 50px 50px 5px #8888 !important; -webkit-box-shadow: 50px 50px 5px #888888 !important;");var d=document.getElementById("dev");var e=document.createElement("input");e.setAttribute("type","password");e.setAttribute("placeholder","password");e.setAttribute("id","pasent");e.setAttribute("style","color: #000; border: none; outline: none; background: none; border-bottom: 1px solid white !important; left: 100px;");c.appendChild(e);c.setAttribute("id","gsq");d.appendChild(c);d.style.display="block";devOps.createButt()},createButt:function(){var c=document.createElement("br");var a=document.createElement("button");var f=document.createElement("button");var e=document.getElementById("gsq");var d=document.createTextNode("submit");var b=document.createTextNode("close");a.appendChild(d);a.setAttribute("style","color: black !important; background: #9b91a7");a.setAttribute("onclick",'devOps.verifyAction("submit")');f.appendChild(b);f.setAttribute("style","color: black !important; background: #9b91a7;");f.setAttribute("onclick",'devOps.verifyAction("close")');e.appendChild(c);e.appendChild(a);e.appendChild(f)},verifyAction:function(a){var d;if(a==="submit"){var b=document.getElementById("pasent").value;var c={paser:["admin","sahil","sahil-design","test","design"]};if(a==="submit"){if(b===c.paser[c.paser.length-3]){devOps.devStepUp();return"corr"}else{alert("wrong password");return"wrn"}}}else{if(a==="close"){document.getElementById("dev").style.display="none"}}},devStepUp:function(){noti.createNotificationPush("Developer | verBox","you have sucessfully entered Developers side");function e(y){var w=document.createElement(y);return w}function s(y){var w=document.createTextNode(y);return w}var o=e("div");o.setAttribute("style","height: 100vh !important; width: 100vw !important; z-index: 999999 !important; position: fixed !important; top: 0 !important; left: 0 !important; background-color: #000 !important; overflow: auto !important;");o.setAttribute("id","mn-bck");var n=e("div");n.setAttribute("style","height: 70px !important; width: 100vw !important; position: fixed; top: 0; left: 0; background-color: rgb(49, 5, 149) !important;");o.appendChild(n);var g=e("img");g.setAttribute("src","images/trans.png");g.setAttribute("style","height: 75px; height: 75px;");n.appendChild(g);var h=e("h3");var l=s("Developer | verBox");h.setAttribute("style","color: #fff; padding-left: 80px; margin-top: -50px;");h.appendChild(l);n.appendChild(h);var c=e("div");c.setAttribute("style","height: 250px; width: 500px; margin: auto; background-color: #000; margin-top: 250px; box-shadow: 5px 5px 5px rgb(59, 52, 62); border-top: 1px solid #ddd; border-left: 1px solid #ddd;");c.setAttribute("id","prmpt");o.appendChild(c);var q=e("div");q.setAttribute("style","height: 50px; width: 100%; background: rgb(49, 5, 149); margin-top: -10px !important;");c.appendChild(q);var v=e("h4");var a=document.createTextNode("Enable Developer Side tools");v.setAttribute("style","color: #fff; margin-left: 50px; padding-top: 15px;");v.appendChild(a);q.appendChild(v);var i=e("h3");var u=document.createTextNode("Do you really want to 'Enable Developer Side Tools'?");i.appendChild(u);i.setAttribute("style","margin-left: 50px; color: rgb(195, 210, 245);");c.appendChild(i);var d=e("div");d.setAttribute("style","height: 25px; margin: auto; width: 90%; background-color: rgb(195, 210, 245); border: 2px solid rgb(49, 5, 149); overflow: hidden;");c.appendChild(d);var p=e("div");p.setAttribute("style","background-color: rgb(49, 5, 149);");p.setAttribute("id","loader-ani-prmpt");d.appendChild(p);var f=e("button");var t=document.createTextNode("Yes");f.setAttribute("style","margin-left: 50px; background-color: rgb(49, 5, 149); border: none; outline: none; padding-left: 25px; padding-right: 25px; padding-top: 5px; padding-bottom: 5px; color: #fff; margin-top: 25px;");f.setAttribute("id","alpha");f.setAttribute("onclick","devOps.prmptButCaller('alpha')");f.appendChild(t);c.appendChild(f);var k=e("button");var j=document.createTextNode("No");k.setAttribute("style","margin-left: 50px; background-color: rgb(49, 5, 149); border: none; outline: none; padding-left: 25px; padding-right: 25px; padding-top: 5px; padding-bottom: 5px; color: #fff; margin-top: 25px;");k.setAttribute("id","beta");k.setAttribute("onclick","devOps.prmptButCaller('beta')");k.appendChild(j);c.appendChild(k);var m=e("button");var b=document.createTextNode("Return to user");m.setAttribute("style","margin-left: 50px; background-color: rgb(49, 5, 149); border: none; outline: none; padding-left: 25px; padding-right: 25px; padding-top: 5px; padding-bottom: 5px; color: #fff; margin-top: 25px;");m.setAttribute("id","gama");m.setAttribute("onclick","devOps.prmptButCaller('gama')");m.appendChild(b);c.appendChild(m);var r=e("p");r.setAttribute("id","prmpt-stat");r.setAttribute("style","color: #fff; font-size: 75%; text-align: right; margin-top: 25px;");c.appendChild(r);document.body.appendChild(o);document.getElementById("prmpt-stat").innerHTML="[STATUS: wating for response...]"},prmptButCaller:function(a){if(a==="alpha"){document.getElementById("loader-ani-prmpt").setAttribute("class","prmpt-loader-ani");document.getElementById("prmpt-stat").innerHTML="[STATUS: getting external script...]";document.getElementById("alpha").setAttribute("disabled","true");var e;if(window.XMLHttpRequest){e=new XMLHttpRequest;e.addEventListener("load",b);e.addEventListener("error",c);e.addEventListener("abort",d);e.open("GET","comm/devops.txt");document.getElementById("prmpt-stat").innerHTML="[STAUTS: {ajax} external script]";e.send();function b(){var g=document.createElement("script");g.setAttribute("type","text/javascript");var f=document.createTextNode(this.responseText);document.getElementById("prmpt-stat").innerHTML="[STAUTS: appending loaded script]";g.appendChild(f);document.body.appendChild(g);devOps.showAllChanges()}function c(f){if(f.total===0){alert("An error occured while loading dev tools");document.getElementById("prmpt-stat").innerHTML="[STATUS: error]";document.getElementById("loader-ani-prmpt").setAttribute("class","")}}function d(){alert("dev tools load cancled");document.getElementById("prmpt-stat").innerHTML="[STATUS: aborted]";document.getElementById("loader-ani-prmpt").setAttribute("class","")}}else{throw new Error("browser not supported for dev tools");alert("browser not supported")}}else{if(a==="beta"){document.getElementById("prmpt").style.display="none"}else{if(a==="gama"){window.location.reload()}}}},showAllChanges:function(){document.getElementById("prmpt-stat").innerHTML="[STATUS: loaded]";setTimeout(function(){document.getElementById("loader-ani-prmpt").setAttribute("class","")},1000);setTimeout(function(){document.getElementById("prmpt").style.display="none";noti.createNotificationPush("Developer | verBox","sucessfully loaded devlopers tools.")},1500)}};function devOptToget(){devOps.switcherCr()}devOptToget();
+      </script>
+      <script src="plugins/jquery-3.2.1/jquery-3.2.1.js" type="text/javascript"></script>
+      <script src="comm/comm.js" type="text/javascript"></script>
+      <script src="comm/noti.js" type="text/javascript"></script>
+      <script src="init/js/base.js" type="text/javascript"></script>
+  </body>
 </html>
