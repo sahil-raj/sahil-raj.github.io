@@ -1,1 +1,21 @@
-.
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    overflow-x: hidden !important;
+    font-family: 'Anton', sans-serif;
+}
+
+.main-div {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+#under-construction {
+    padding-top: 40vh;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: bolder;
+    word-spacing: 12px;
+    letter-spacing: 10px;
+    word-wrap: break-word;
+}
